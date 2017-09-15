@@ -30,9 +30,9 @@ import numpy as np
 import requests
 import tensorflow as tf
 
-from magenta.models.sketch_rnn import model as sketch_rnn_model
-from magenta.models.sketch_rnn import utils
-# import utils
+import model as sketch_rnn_model
+import utils
+
 
 
 tf.logging.set_verbosity(tf.logging.INFO)
@@ -43,7 +43,7 @@ tf.app.flags.DEFINE_string(
     'data_dir',
     # 'https://github.com/hardmaru/sketch-rnn-datasets/raw/master/aaron_sheep',
     # '/tmp/sketch_rnn/datasets',
-    '/home/hsy/work/hsy/repertory/data/sketch-rnn-datasets/aaron_sheep/',
+    '/home/hsy/work/hsy/repertory/data/sketch-rnn-datasets',
     'The directory in which to find the dataset specified in model hparams. '
     'If data_dir starts with "http://" or "https://", the file will be fetched '
     'remotely.')
