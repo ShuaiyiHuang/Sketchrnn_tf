@@ -31,8 +31,8 @@ import requests
 import tensorflow as tf
 
 from magenta.models.sketch_rnn import model as sketch_rnn_model
-# from magenta.models.sketch_rnn import utils
-import utils
+from magenta.models.sketch_rnn import utils
+# import utils
 
 
 tf.logging.set_verbosity(tf.logging.INFO)
