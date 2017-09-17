@@ -53,7 +53,7 @@ tf.app.flags.DEFINE_string(
     # '/tmp/sketch_rnn/models/default',
     'Directory to store model checkpoints, tensorboard.')
 tf.app.flags.DEFINE_boolean(
-    'resume_training', False,
+    'resume_training', True,
     'Set to true to load previous checkpoint')
 tf.app.flags.DEFINE_string(
     'hparams', '',
